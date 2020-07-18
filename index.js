@@ -1,25 +1,19 @@
-const billForm = document.querySelector('.billForm');
-const peopleForm = document.querySelector('.peopleForm');
+const submitBill = document.querySelector('#billForm');
+const typedBillValue = document.querySelector('.billAmount')
 
 
-const calculateBill = () => {
-  
-}
-
-billForm.addEventListener('submit',(e) => {
+submitBill.addEventListener('submit', (e) => {
   e.preventDefault();
-  const amountOfBill = billForm.bill.value;
-});
+  const billValue = submitBill.bill.value;
+  const peopleValue = submitBill.people.value;
+
+  if( billValue && peopleValue !== 0 ) {
+    const billTotal = billValue / peopleValue;
+    console.log(billTotal);
+  } else if( peopleValue === 0 || !peopleValue ) {
+    const billTotal = billValue;
+      console.log(billTotal)
+    }   
+})
 
 
-peopleForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const numberOfPeople = peopleForm.people.value;
-});
-
-const displayBill = () => {
-  const html = `
-  Your bill is $${billTotal}!
-
-  `
-}

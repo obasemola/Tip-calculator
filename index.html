@@ -9,42 +9,40 @@
 <body>
   <div id="container">
     <h1 class="h1">TIP CALCULATOR</h1>
-
-    <div>
-      <form class="billForm">
-        <label for="amount">$</label>
-        <input class="billAmount" name="bill" placeholder="Bill Amount"/>
-      </form>
-    </div>
-
-    <div>
-      <h4>How was your service</h4>
-    </div>
-
-    <div>
-      <select name="options" id="options">
-        <option value="choose an option">--Choose an Option--</option>
-        <option value="option1">Excellent</option>
-        <option value="option2">Very Good</option>
-        <option value="option3">Good</option>
-        <option value="option4">Bad</option>
-        <option value="option5">Very Bad</option>
-      </select>
-    </div>
-
-    <div>
-      <h4>How many people are sharing the bill?</h4>
-    </div>
-    <div>
-      <form class="peopleForm">
-        <input class="people" name="people">
-        <label>people</label>
-      </form>
-    </div>
-
-    <div>
-      <button>CALCULATE!</button>
-    </div>
+    <form id="billForm">
+      <div>
+          <label for="amount">$</label>
+          <input class="billAmount" name="bill" placeholder="Bill Amount"/>
+      </div>
+  
+      <div>
+        <h4>How was your service</h4>
+      </div>
+  
+      <div>
+        <select name="options" id="options">
+          <option value="choose an option">--Choose an Option--</option>
+          <option value="option1">Excellent</option>
+          <option value="option2">Very Good</option>
+          <option value="option3">Good</option>
+          <option value="option4">Bad</option>
+          <option value="option5">Very Bad</option>
+        </select>
+      </div>
+  
+      <div>
+        <h4>How many people are sharing the bill?</h4>
+      </div>
+      <div>
+          <input class="people" name="people">
+          <label>people</label>
+      </div>
+  
+      <div>
+        <button class="calculate">CALCULATE!</button>
+      </div>
+    </form>
+    
   </div>
   <script src="index.js"></script>
 </body>
