@@ -3,6 +3,7 @@ body {
 }
 
 #container {
+  margin: auto;
   background-color: white;
   display: inline-block;
   padding: 50px;
@@ -14,4 +15,8 @@ body {
 #container .h1 {
   color: blue;
   padding-bottom: 20px;
+}
+
+.none {
+  display: none;
 }
